@@ -20,7 +20,7 @@
             </div>
             <div class="card-action">
                 <a class="btn green accent-4" href="{{ url_for('edit_category', category_id=category.id) }}">Edit</a>
-                <a class="btn red" href="#">Delete</a>
+                <a class="btn red" href="{{ url_for('delete_category', category_id=category.id) }}">Delete</a>
             </div>
         </div>
     </div>
